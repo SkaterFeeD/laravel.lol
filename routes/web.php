@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TestingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -108,3 +109,5 @@ Route::get('/hello5/{name}', [PostController::class, 'hello5'])->where('id', '[1
 /* Представления */
 Route::get('/hello6', [PostController::class, 'hello6']);
 Route::get('/hello7/{name}', [PostController::class, 'hello7']);
+
+Route::get('/testing', [TestingController::class, 'index']);
